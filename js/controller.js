@@ -7,7 +7,8 @@ function Controller() {
 
     function getCHF() {
         //lade den wert von der ID "chfIN"
-        return window.document.getElementById("chfIN").value;
+       //return window.document.getElementById("chfIN").value;
+        return $("#chfIN").val();
     }
 
     function processCHF() {
@@ -24,12 +25,15 @@ function Controller() {
     }
 
     self.onLoaded = function() {
-        window.document.getElementById("convertBN").addEventListener("click", processCHF, false);
-        window.document.addEventListener("keydown", validate, false); //Input control: Accepts only numbers
+       // window.document.getElementById("convertBN").addEventListener("click", processCHF, false);
+       // window.document.addEventListener("keydown", validate, false); //Input control: Accepts only numbers
+        $("#convertBN").click(processCHF);
+        $("#chfIN").keydown(validate);  //TODO: funktioniert das?
     };
 
     self.update = function(euro) {
-        window.document.getElementById("euroIN").value = euro;
+       // window.document.getElementById("euroIN").value = euro;
+        $("#euroIN").val(euro);
     };
 
 //Input controll functions

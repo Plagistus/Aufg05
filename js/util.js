@@ -11,11 +11,11 @@ function Observable() {
         });
     };
 
-    this.notifyObservers = function(total, totalPerPerson, getTip, tipPerPerson) {
+    this.notifyObservers = function(data) {
         var i;
         console.log(observers);
         for ( i = 0; i < observers.length; i = i + 1) {
-            observers[i].update(total, totalPerPerson, getTip, tipPerPerson);
+            observers[i].update(data);
         }
     };
 }
