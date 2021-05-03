@@ -28,7 +28,7 @@ function Controller(events, handler) {
        // window.document.getElementById("convertBN").addEventListener("click", processCHF, false);
        // window.document.addEventListener("keydown", validate, false); //Input control: Accepts only numbers
         $("#convertBN").trigger("click", processCHF);
-        $("#chfIN").trigger("keydown",validate);  //TODO: funktioniert das?
+        $("#chfIN").trigger("keydown",validate);
 
     };
 
