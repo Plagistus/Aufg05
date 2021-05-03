@@ -1,6 +1,6 @@
 'use strict';
 
-function Controller() {
+function Controller(events, handler) {
     var self = this;
 
     model.observable.addObserver(self);
@@ -24,11 +24,12 @@ function Controller() {
         }
     }
 
-    self.onLoaded = function() {
+    self.onLoaded = function (events, handler) {
        // window.document.getElementById("convertBN").addEventListener("click", processCHF, false);
        // window.document.addEventListener("keydown", validate, false); //Input control: Accepts only numbers
-        $("#convertBN").click(processCHF);
-        $("#chfIN").keydown(validate);  //TODO: funktioniert das?
+        $("#convertBN").trigger("click", processCHF);
+        $("#chfIN").trigger("keydown",validate);  //TODO: funktioniert das?
+
     };
 
     self.update = function(euro) {
