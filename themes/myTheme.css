@@ -226,7 +226,7 @@ html .ui-body-a .ui-bar-inherit,
 html body .ui-group-theme-a .ui-bar-inherit {
 	background-color: #A9F5BC /*{a-bar-background-color}*/;
 	border-color: #8c7e54 /*{a-bar-border}*/;
-	color: #FFFFFF /*{a-bar-color}*/;
+	color: #088A29 /*{a-bar-color}*/;
 	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #eeeeee /*{a-bar-shadow-color}*/;
 	font-weight: bold;
 }
@@ -348,9 +348,9 @@ html .ui-bar-a .ui-slider-track .ui-btn-active,
 html .ui-body-a .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-a .ui-btn-active {
-	background-color: #A9F5BC /*{a-active-background-color}*/;
+	background-color: #088A29 /*{a-active-background-color}*/;
 	border-color: #000000 /*{a-active-border}*/;
-	color: #088A29 /*{a-active-color}*/;
+	color: #FFFFFF /*{a-active-color}*/;
 	text-shadow: 0 /*{a-active-shadow-x}*/ 0px /*{a-active-shadow-y}*/ /*{a-active-shadow-radius}*//*{a-active-shadow-color}*/;
 }
 /* Active radio button icon */
